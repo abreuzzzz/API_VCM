@@ -11,11 +11,11 @@ deepseek_api_key = os.getenv("DEEPSEEK_API_KEY")
 client = OpenAI(api_key=deepseek_api_key, base_url="https://api.deepseek.com")
 
 # URL da planilha Google Sheets exportada como CSV
-sheet_id = "1DJOFiqwINqZHO-4O3aH94HhCfHCdaRZ5SCA6-MMeyTM"
+sheet_id = "14GC_m5E1FI1aFtCZd_cUO-vMClTMIDjfI0fHIg0xzoY"
 gid = "1876626478"
 
 sheet_csv_url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/export?format=csv&gid={gid}"
-SHEET_ID2 = "1XhSDhoGxWORTLOVGH4JCF4kyFsXjlzQAkOUXoSccXic"
+SHEET_ID2 = "1P2AX6wmmUP6z81hGdyXYmBQAS5LQJvVHIEOoLehjl9U"
 
 # Ler a planilha
 df = pd.read_csv(sheet_csv_url, low_memory=False)
